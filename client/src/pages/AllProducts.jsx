@@ -51,8 +51,7 @@ const AllProducts = () => {
                                     <td>{createdAt}</td>
                                     <td>
                                         <Link to={`/products/${_id}`}>View</Link>
-                                        {/* <Link to={`/products/edit/${_id}`}>Edit</Link> */}
-                                        <button onClick={()=> navigate(`/products/edit/${_id}`)}> </button>
+                                        <Link to={`/products/edit/${_id}`}>Edit</Link>
                                         <button onClick={() => deleteProduct(_id)}>Delete</button>
                                     </td>
                                 </tr>
